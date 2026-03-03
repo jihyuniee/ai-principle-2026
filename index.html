@@ -13,12 +13,54 @@
       <div class="badge">🤖 2026 · 1학기 · 2학년(1~5반) · 3시수</div>
       <h1>인공지능 원리탐구</h1>
       <p class="subtitle">AI와 함께 문제를 해결하는 프로젝트 수업</p>
+
+      <!-- ✅ 히어로 이미지(내장 SVG) -->
+      <div class="hero-illus" aria-hidden="true">
+        <svg viewBox="0 0 820 220" class="illus">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="rgba(59,130,246,.45)"/>
+              <stop offset="1" stop-color="rgba(34,197,94,.28)"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="820" height="220" rx="22" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.10)"/>
+          <rect x="22" y="26" width="256" height="168" rx="18" fill="rgba(0,0,0,.18)" stroke="rgba(255,255,255,.10)"/>
+          <text x="44" y="62" fill="rgba(229,231,235,.92)" font-size="16" font-weight="700">우리의 역할</text>
+          <text x="44" y="92" fill="rgba(167,176,192,.95)" font-size="13">목표/제약 설정</text>
+          <text x="44" y="114" fill="rgba(167,176,192,.95)" font-size="13">검증·책임·결정</text>
+          <text x="44" y="136" fill="rgba(167,176,192,.95)" font-size="13">기록(포트폴리오)</text>
+
+          <rect x="302" y="26" width="496" height="168" rx="18" fill="url(#g1)" opacity=".45"/>
+          <rect x="302" y="26" width="496" height="168" rx="18" fill="rgba(0,0,0,.12)" stroke="rgba(255,255,255,.10)"/>
+          <text x="324" y="62" fill="rgba(229,231,235,.96)" font-size="16" font-weight="800">AI 에이전트</text>
+          <text x="324" y="92" fill="rgba(229,231,235,.88)" font-size="13">인식 → 분석 → 추론 → 실행</text>
+
+          <g opacity=".95">
+            <rect x="324" y="112" width="112" height="44" rx="14" fill="rgba(255,255,255,.10)" stroke="rgba(255,255,255,.14)"/>
+            <text x="380" y="140" text-anchor="middle" fill="rgba(255,255,255,.92)" font-size="13" font-weight="700">인식</text>
+
+            <rect x="450" y="112" width="112" height="44" rx="14" fill="rgba(255,255,255,.10)" stroke="rgba(255,255,255,.14)"/>
+            <text x="506" y="140" text-anchor="middle" fill="rgba(255,255,255,.92)" font-size="13" font-weight="700">분석</text>
+
+            <rect x="576" y="112" width="112" height="44" rx="14" fill="rgba(255,255,255,.10)" stroke="rgba(255,255,255,.14)"/>
+            <text x="632" y="140" text-anchor="middle" fill="rgba(255,255,255,.92)" font-size="13" font-weight="700">추론</text>
+
+            <rect x="702" y="112" width="80" height="44" rx="14" fill="rgba(255,255,255,.10)" stroke="rgba(255,255,255,.14)"/>
+            <text x="742" y="140" text-anchor="middle" fill="rgba(255,255,255,.92)" font-size="13" font-weight="700">실행</text>
+          </g>
+
+          <path d="M260 110 C280 110, 290 110, 302 110" stroke="rgba(255,255,255,.25)" stroke-width="2" fill="none"/>
+          <circle cx="302" cy="110" r="4" fill="rgba(255,255,255,.35)"/>
+        </svg>
+      </div>
+
       <div class="hero-actions">
         <a class="btn primary" href="#diagnostic">오늘 바로 진단평가 하기</a>
         <a class="btn" href="#overview">수업 방향 보기</a>
       </div>
+
       <div class="mini-note">
-        이 페이지는 우리 수업의 “교과서” 역할을 해. (수업 자료/과제/기록/링크를 여기서 안내)
+        이 페이지는 우리 수업의 “교과서” 역할을 해. (수업 자료/평가/과제/기록/링크를 여기서 안내)
       </div>
     </div>
   </header>
@@ -29,8 +71,9 @@
       <a href="#teacher">교사 소개</a>
       <a href="#goals">수업 목표</a>
       <a href="#evaluation">평가 방식</a>
+      <a href="#rules">AI 사용 규칙</a>
       <a href="#plan">한 학기 흐름</a>
-      <a href="#lesson1">1차시: 인공지능 기초</a>
+      <a href="#lesson1">1차시</a>
       <a href="#diagnostic">진단평가</a>
       <a href="#expect">기대/다짐</a>
     </div>
@@ -38,7 +81,6 @@
 
   <main class="container">
 
-    <!-- 과목 소개 -->
     <section class="section" id="overview">
       <h2>🧩 과목 소개</h2>
       <div class="grid two">
@@ -46,32 +88,80 @@
           <h3>이 수업은 뭐하는 수업?</h3>
           <p>
             우리 수업은 “인공지능을 배우는 수업”이면서 동시에,
-            <b>AI와 협업해서 실생활 문제를 해결하는 수업</b>이야.
+            <b>AI와 협업해서 실생활 문제를 해결하는 프로젝트 수업</b>이야.
           </p>
           <ul class="bullets">
             <li>인공지능이 무엇인지, 원리가 무엇인지 이해</li>
             <li>생활 속 문제를 발견하고(추상화) 문제를 정의</li>
-            <li>AI(플랫폼/에이전트)를 활용해 해결 아이디어를 설계</li>
-            <li>팀으로 결과물을 만들고 공유/발표</li>
+            <li>AI 플랫폼/에이전트를 활용해 해결 방안을 설계</li>
+            <li>팀으로 발표·보고서 형태의 결과물을 만들고 공유</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>우리 수업이 지향하는 분위기</h3>
+          <h3>수업의 분위기</h3>
           <ul class="bullets">
-            <li><b>즐거운 곳</b> (하지만 유튜브/게임/방치가 목적은 아님)</li>
-            <li><b>쉼이 있는 곳</b> (학업 스트레스 속 숨 쉴 공간)</li>
-            <li><b>실생활과 가장 연관 있는 곳</b> (쓸모 있는 프로젝트)</li>
-            <li><b>누구를 이기는 경쟁</b>보다 <b>성장</b>과 <b>포트폴리오</b></li>
+            <li><b>즐거운 곳</b> + <b>쉼이 있는 곳</b></li>
+            <li><b>실생활과 가장 연관 있는 곳</b></li>
+            <li>유튜브/게임/방치는 목표가 아님</li>
+            <li>누구를 이기는 경쟁보다 <b>성장과 포트폴리오</b></li>
           </ul>
           <div class="callout">
-            목표는 “학교에서 이 수업 듣길 진짜 잘했다”를 우리 스스로 만들기.
+            “학교에서 이 수업 듣길 진짜 잘했다”를 만들자.
           </div>
+        </div>
+      </div>
+
+      <!-- ✅ 중간 이미지 카드 3개(내장 SVG) -->
+      <div class="grid three">
+        <div class="card">
+          <div class="img-card" aria-hidden="true">
+            <svg viewBox="0 0 420 220" class="illus">
+              <rect x="0" y="0" width="420" height="220" rx="18" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.10)"/>
+              <circle cx="110" cy="110" r="54" fill="rgba(59,130,246,.18)" stroke="rgba(59,130,246,.45)"/>
+              <circle cx="110" cy="110" r="24" fill="rgba(59,130,246,.25)"/>
+              <rect x="190" y="64" width="190" height="28" rx="12" fill="rgba(255,255,255,.08)"/>
+              <rect x="190" y="104" width="160" height="28" rx="12" fill="rgba(255,255,255,.08)"/>
+              <rect x="190" y="144" width="210" height="28" rx="12" fill="rgba(255,255,255,.08)"/>
+              <text x="190" y="54" fill="rgba(229,231,235,.85)" font-size="12">문제 발견</text>
+            </svg>
+          </div>
+          <h3>문제 발견</h3>
+          <p class="muted">불편함을 ‘문제 정의’로 바꾸는 힘.</p>
+        </div>
+
+        <div class="card">
+          <div class="img-card" aria-hidden="true">
+            <svg viewBox="0 0 420 220" class="illus">
+              <rect x="0" y="0" width="420" height="220" rx="18" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.10)"/>
+              <rect x="56" y="56" width="140" height="120" rx="16" fill="rgba(34,197,94,.14)" stroke="rgba(34,197,94,.45)"/>
+              <rect x="224" y="56" width="140" height="120" rx="16" fill="rgba(59,130,246,.14)" stroke="rgba(59,130,246,.45)"/>
+              <text x="126" y="122" text-anchor="middle" fill="rgba(229,231,235,.92)" font-size="14" font-weight="700">우리</text>
+              <text x="294" y="122" text-anchor="middle" fill="rgba(229,231,235,.92)" font-size="14" font-weight="700">AI</text>
+              <path d="M196 116 C210 116, 214 116, 224 116" stroke="rgba(255,255,255,.30)" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+          <h3>AI 협업</h3>
+          <p class="muted">AI를 ‘대신’이 아니라 ‘도구’로.</p>
+        </div>
+
+        <div class="card">
+          <div class="img-card" aria-hidden="true">
+            <svg viewBox="0 0 420 220" class="illus">
+              <rect x="0" y="0" width="420" height="220" rx="18" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.10)"/>
+              <rect x="70" y="50" width="280" height="140" rx="16" fill="rgba(245,158,11,.10)" stroke="rgba(245,158,11,.45)"/>
+              <rect x="96" y="78" width="230" height="18" rx="9" fill="rgba(255,255,255,.08)"/>
+              <rect x="96" y="110" width="190" height="18" rx="9" fill="rgba(255,255,255,.08)"/>
+              <rect x="96" y="142" width="210" height="18" rx="9" fill="rgba(255,255,255,.08)"/>
+              <text x="210" y="64" text-anchor="middle" fill="rgba(229,231,235,.85)" font-size="12">포트폴리오</text>
+            </svg>
+          </div>
+          <h3>포트폴리오</h3>
+          <p class="muted">과정 기록이 곧 실력.</p>
         </div>
       </div>
     </section>
 
-    <!-- 교사 소개 -->
     <section class="section" id="teacher">
       <h2>👩‍🏫 교사 소개</h2>
       <div class="card">
@@ -85,197 +175,152 @@
         </div>
         <hr class="sep" />
         <p class="muted">
-          우리 수업의 핵심은 “AI를 대신 써서 편하게 끝내기”가 아니라,
-          <b>AI를 도구로 삼아 더 좋은 결정을 하고, 더 나은 결과물을 만드는 힘</b>을 키우는 거야.
+          목표는 “AI가 해준 걸 잘 복붙하기”가 아니라,
+          <b>AI를 활용해 더 좋은 결정을 하고, 더 의미 있는 결과물을 만드는 힘</b>을 키우는 것.
         </p>
       </div>
     </section>
 
-    <!-- 수업 목표 -->
     <section class="section" id="goals">
       <h2>🎯 수업 목표</h2>
       <div class="grid two">
         <div class="card">
-          <h3>우리의 성장 목표</h3>
+          <h3>우리가 얻고 싶은 것</h3>
           <ul class="bullets">
-            <li><b>AI 리터러시</b>를 실제로 키우기</li>
-            <li><b>실생활 문제 발견</b> → 문제 정의 → 해결 설계</li>
-            <li><b>AI와 협업</b>해서 결과물을 만드는 경험</li>
-            <li><b>탐구력/문제 해결력/컴퓨팅 사고력</b> 강화</li>
+            <li><b>AI 리터러시</b> 향상</li>
+            <li>실생활 문제 발견 → 문제 정의 → 해결 설계</li>
+            <li>AI 플랫폼 활용 경험</li>
+            <li>탐구력/문제 해결력/컴퓨팅 사고력 강화</li>
           </ul>
         </div>
         <div class="card">
-          <h3>AI 시대의 핵심 메시지</h3>
+          <h3>수업 한 줄 정의</h3>
           <p>
-            AI 시대에는 <b>인간이 할 일</b>과 <b>AI가 할 일</b>이 분명히 나뉘어 있어.
-            우리는 <b>AI 에이전트</b>를 활용해 문제를 해결하면서,
-            사회에 필요한 인재로 성장하는 방법을 프로젝트로 배울 거야.
+            <b>AI 시대에 인간이 할 일과 AI가 할 일을 구분</b>하고,
+            <b>AI 에이전트</b>를 활용해 실생활 문제를 해결하며,
+            사회에 필요한 역량을 프로젝트로 증명하는 수업.
           </p>
           <div class="callout">
-            “패스만 하려는 태도” vs “진로·역량을 드러내는 결과물을 만들려는 태도”
+            “패스 모드” 말고, “진로/역량이 드러나는 결과물”을 만들자.
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 평가 방식 -->
     <section class="section" id="evaluation">
       <h2>📝 평가 방식</h2>
       <div class="grid two">
         <div class="card">
-          <h3>수행평가 중심 · 포트폴리오 형태</h3>
-          <ul class="bullets">
-            <li>매 시간 결과물을 얼마나 성실하고 정확히 제출했는가</li>
-            <li>주어진 시간에 팀이 얼마나 협업해서 문제를 해결하려 했는가</li>
-            <li>기록(과정) + 산출물(결과) 둘 다 남김</li>
-          </ul>
-          <p class="muted">
-            절대평가 느낌의 “서열 경쟁”보다, <b>프로젝트형 성장</b>에 초점.
-          </p>
+          <h3>비중</h3>
+          <div class="pill-row">
+            <span class="pill">포트폴리오 70%</span>
+            <span class="pill">팀프로젝트 30%</span>
+          </div>
+          <p class="muted small">서열 경쟁보다 “성장” 중심으로 간다.</p>
         </div>
 
         <div class="card">
-          <h3>우리가 남길 포트폴리오 예시</h3>
+          <h3>결과물 형태(최소 기준)</h3>
           <ul class="bullets">
-            <li>문제 발견/정의서</li>
-            <li>AI 활용 일지(프롬프트-결과-수정-판단)</li>
-            <li>알고리즘 설계(흐름도/의사코드 가능)</li>
-            <li>프로토타입(웹앱/기획서/시연) 또는 발표</li>
-            <li>(선택) 마이크로비트 등 피지컬 컴퓨팅 연계</li>
+            <li><b>발표</b> (팀 또는 개인)</li>
+            <li><b>보고서</b> (문제정의 + 과정 + 결론/한계 + 다음 단계)</li>
           </ul>
+          <div class="callout">
+            웹앱/프로토타입 제작은 “확장 옵션”. 원하면 더 크게 갈 수 있어.
+          </div>
         </div>
       </div>
 
-      <div class="card">
-        <h3>평가가 보고 싶은 역량(수업 언어로)</h3>
-        <div class="pill-row">
-          <span class="pill">문제 발견(추상화)</span>
-          <span class="pill">알고리즘 사고</span>
-          <span class="pill">AI 활용 능력</span>
-          <span class="pill">의사결정/비판적 사고</span>
-          <span class="pill">협업/소통</span>
-          <span class="pill">꾸준한 기록</span>
+      <div class="grid two">
+        <div class="card">
+          <h3>매시간 제출</h3>
+          <ul class="bullets">
+            <li>제출처: <b>구글 클래스룸</b></li>
+            <li>수업 중 결과물(기록/정리/산출물)을 매시간 남김</li>
+            <li>제출이 곧 포트폴리오 점수의 핵심</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>평가가 보는 포인트</h3>
+          <div class="pill-row">
+            <span class="pill">문제 발견(추상화)</span>
+            <span class="pill">알고리즘 사고</span>
+            <span class="pill">AI 활용</span>
+            <span class="pill">검증/판단</span>
+            <span class="pill">협업/기여</span>
+            <span class="pill">꾸준한 제출</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 한 학기 흐름 -->
+    <!-- ✅ AI 사용 규칙 섹션(요청 반영) -->
+    <section class="section" id="rules">
+      <h2>🛡️ AI 사용 규칙</h2>
+      <div class="card">
+        <h3>기본 원칙</h3>
+        <ul class="bullets">
+          <li><b>명령 프롬프트 그대로 복사 제출 금지</b> (AI가 만든 문장을 그대로 내면 학습이 아니다)</li>
+          <li><b>지현이 만든 GPT에서만 “검색/조사” 진행</b> (통제된 환경에서만 활용)</li>
+          <li><b>검색/대화 기록은 확인 가능</b>해야 한다 (과정 공개)</li>
+        </ul>
+        <div class="callout">
+          우리 수업에서 AI는 “대신 하는 존재”가 아니라 “함께 일하는 도구”.
+          결과보다 <b>과정(기록, 검증, 수정)</b>이 더 중요하다.
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="plan">
       <h2>📌 한 학기 프로젝트 흐름</h2>
       <div class="card">
         <ol class="steps">
-          <li><b>불편함 수집</b> — 생활 속에서 “문제 후보”를 모음</li>
-          <li><b>AI와 비교하기</b> — AI가 제시한 것 vs 내가 찾은 것</li>
-          <li><b>문제 정의</b> — 누가/언제/왜/얼마나/무엇이 불편한가</li>
-          <li><b>AI 활용 일지</b> — 프롬프트·결과·수정·판단을 기록</li>
-          <li><b>프로토타입 제작</b> — 웹앱/기획/알고리즘/시연 중 택</li>
-          <li><b>발표 & 성장 성찰</b> — 결과 공유 + 다음 단계 제안</li>
+          <li><b>불편함 수집</b></li>
+          <li><b>AI와 비교하기</b></li>
+          <li><b>문제 정의</b></li>
+          <li><b>AI 활용 일지</b> (프롬프트-결과-수정-판단)</li>
+          <li><b>발표/보고서 제작</b></li>
+          <li><b>성장 성찰</b> (무엇이 달라졌는가)</li>
         </ol>
-        <p class="muted">
-          이 흐름은 “지능형 에이전트/인공지능 단원”의 학습 흐름(개념→특성→구성·동작→적용)과 연결해서 운영해. :contentReference[oaicite:1]{index=1}
-        </p>
       </div>
     </section>
 
-    <!-- 1차시: 인공지능 기초 -->
     <section class="section" id="lesson1">
-      <h2>📘 1차시: 인공지능 기초(오늘)</h2>
-
-      <div class="grid two">
-        <div class="card">
-          <h3>인공지능이란?</h3>
-          <p>
-            인공지능은 <b>컴퓨터 프로그램을 활용해 인간의 지적 능력을 모방하고 확장하여</b>
-            <b>문제를 해결</b>하는 기술 또는 분야야. :contentReference[oaicite:2]{index=2}
-          </p>
-          <div class="callout">
-            “자동화(규칙)”와 “AI(데이터 기반 분석·이해·추론)”는 다르다. :contentReference[oaicite:3]{index=3}
-          </div>
-          <ul class="bullets">
-            <li>규칙 기반: 정해진 규칙대로 답</li>
-            <li>AI 기반: 입력을 이해/추론해 답(데이터 기반)</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>지능형 에이전트(Agent) 핵심</h3>
-          <p>
-            지능형 에이전트는 <b>스스로 환경을 인지</b>하고, <b>작동</b>하며,
-            <b>변화에 적응</b>하고, <b>최상의 결과</b>를 도출하도록 행동하는 컴퓨팅 시스템이야. :contentReference[oaicite:4]{index=4}
-          </p>
-          <div class="pill-row">
-            <span class="pill">인식</span>
-            <span class="pill">학습</span>
-            <span class="pill">추론</span>
-            <span class="pill">행동</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid two">
-        <div class="card">
-          <h3>지능형 에이전트의 특성 6가지</h3>
-          <ul class="bullets">
-            <li><b>자율성</b>: 스스로 판단하고 행동</li>
-            <li><b>사회성</b>: 다른 에이전트와 상호작용</li>
-            <li><b>반응성</b>: 환경 변화에 실시간 반응</li>
-            <li><b>시간 연속성</b>: 지속적으로 수행</li>
-            <li><b>능동성</b>: 계획하고 주도적으로 이행</li>
-            <li><b>적응성</b>: 사용자/환경에 따라 스스로 적응</li>
-          </ul>
-          <p class="muted">우리 프로젝트에서 “AI 에이전트”를 볼 때 이 체크리스트로 관찰할 거야. :contentReference[oaicite:5]{index=5}</p>
-        </div>
-
-        <div class="card">
-          <h3>구성요소 & 동작 과정(4단계)</h3>
-          <div class="grid two tight">
-            <div class="mini-card">
-              <b>구성요소</b>
-              <ul class="bullets small">
-                <li>센서</li>
-                <li>액추에이터</li>
-                <li>에이전트 함수</li>
-              </ul>
-            </div>
-            <div class="mini-card">
-              <b>동작 과정</b>
-              <ol class="steps small">
-                <li>센서로 수집/인식</li>
-                <li>상황 분석</li>
-                <li>행동/결과 추론</li>
-                <li>액추에이터로 수행</li>
-              </ol>
-            </div>
-          </div>
-          <p class="muted">이 구조는 이후 “우리 문제 해결 시스템 설계” 틀로 그대로 쓸 거야. :contentReference[oaicite:6]{index=6}</p>
-        </div>
+      <h2>📘 1차시(오늘): 인공지능 기초</h2>
+      <div class="card">
+        <h3>오늘 목표</h3>
+        <ul class="bullets">
+          <li>인공지능 / 지능형 에이전트 핵심 개념 잡기</li>
+          <li>AI 리터러시 진단평가로 우리 출발점 확인</li>
+          <li>한 학기 기대/다짐 기록 남기기</li>
+        </ul>
       </div>
 
       <div class="card">
         <h3>오늘 수업 흐름(50분)</h3>
         <div class="timeline">
-          <div class="t-item"><span class="t-time">0~5</span><span class="t-text">오리엔테이션: 수업 방향 & 규칙</span></div>
-          <div class="t-item"><span class="t-time">5~15</span><span class="t-text">인공지능/지능형 에이전트 핵심 개념</span></div>
-          <div class="t-item"><span class="t-time">15~30</span><span class="t-text">AI 리터러시 진단평가(개별) + 즉시 결과 확인</span></div>
-          <div class="t-item"><span class="t-time">30~45</span><span class="t-text">우리의 기대/목표 작성 + 공유(선택)</span></div>
-          <div class="t-item"><span class="t-time">45~50</span><span class="t-text">정리: 다음 시간 예고</span></div>
+          <div class="t-item"><span class="t-time">0~5</span><span class="t-text">OT: 수업 방향/평가/규칙</span></div>
+          <div class="t-item"><span class="t-time">5~15</span><span class="t-text">인공지능·에이전트 핵심 개념</span></div>
+          <div class="t-item"><span class="t-time">15~30</span><span class="t-text">AI 리터러시 진단평가</span></div>
+          <div class="t-item"><span class="t-time">30~45</span><span class="t-text">기대/다짐 작성 + 공유(선택)</span></div>
+          <div class="t-item"><span class="t-time">45~50</span><span class="t-text">정리 + 다음 시간 예고</span></div>
         </div>
       </div>
     </section>
 
-    <!-- 진단평가 -->
     <section class="section" id="diagnostic">
       <h2>🧪 AI 리터러시 진단평가(오늘)</h2>
       <div class="grid two">
         <div class="card">
           <h3>진단평가 안내</h3>
           <ul class="bullets">
-            <li>점수는 “서열”을 만들기 위한 게 아니야.</li>
-            <li><b>우리 출발점</b>을 확인하고, 학기 말에 <b>성장</b>을 비교하려는 목적이야.</li>
-            <li>결과는 이 브라우저에만 저장돼(로컬 저장).</li>
+            <li>점수는 서열이 아니라 <b>출발점</b> 확인용</li>
+            <li>학기 말에 성장 비교를 위해 남김</li>
+            <li>제출은 <b>구글 클래스룸</b>로 진행</li>
           </ul>
           <div class="callout">
-            아래 버튼을 누르면 바로 시작. 다 끝나면 점수/피드백이 뜨게 해뒀어.
+            아래 버튼 누르면 시작. 끝나면 “결과 복사”해서 클래스룸에 붙여넣으면 돼.
           </div>
           <button class="btn primary" id="startQuizBtn">진단평가 시작하기</button>
           <button class="btn" id="resetQuizBtn">기록 초기화</button>
@@ -292,7 +337,6 @@
       </div>
     </section>
 
-    <!-- 기대/다짐 -->
     <section class="section" id="expect">
       <h2>💬 우리 수업에 바라는 것</h2>
       <div class="grid two">
@@ -300,16 +344,15 @@
           <h3>기대/목표(개별 기록)</h3>
           <p class="muted">
             오늘은 “기대하는 점”과 “한 학기 다짐”을 짧게 남기자.
-            (이 기록은 학기 말 성찰 때 엄청 도움이 돼)
           </p>
           <label class="label" for="exp1">1) 이 수업에서 가장 기대하는 것(1~2문장)</label>
-          <textarea id="exp1" class="textarea" placeholder="예) 실생활 문제를 AI로 해결해보는 경험, 웹앱 만들어보기 등"></textarea>
+          <textarea id="exp1" class="textarea" placeholder="예) 실생활 문제를 AI로 해결해보는 경험, 발표/보고서 제대로 해보기 등"></textarea>
 
           <label class="label" for="exp2">2) 내가 키우고 싶은 역량(선택)</label>
-          <textarea id="exp2" class="textarea" placeholder="예) 문제정의, 프롬프트 작성, 협업, 발표, 기록 습관 등"></textarea>
+          <textarea id="exp2" class="textarea" placeholder="예) 문제정의, 프롬프트 작성, 협업, 검증, 기록 습관 등"></textarea>
 
           <label class="label" for="exp3">3) 한 학기 다짐(짧게)</label>
-          <textarea id="exp3" class="textarea" placeholder="예) 매시간 기록 남기기 / 팀에 기여하기 / 패스 모드 금지"></textarea>
+          <textarea id="exp3" class="textarea" placeholder="예) 매시간 제출하기 / 팀에 기여하기 / 복붙 금지"></textarea>
 
           <div class="row">
             <button class="btn primary" id="saveExpectBtn">저장하기</button>
@@ -332,9 +375,9 @@
 
           <h3>다음 시간 예고</h3>
           <ul class="bullets">
-            <li>생활 속 “불편함 수집” 시작</li>
-            <li>AI와 비교하기(내가 찾은 것 vs AI가 찾은 것)</li>
-            <li>팀 편성 & 프로젝트 방향 잡기</li>
+            <li>불편함 수집 시작</li>
+            <li>AI와 비교하기</li>
+            <li>팀 프로젝트 방향 잡기</li>
           </ul>
         </div>
       </div>
