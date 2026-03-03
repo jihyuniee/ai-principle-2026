@@ -214,3 +214,14 @@ h1{margin:14px 0 6px;font-size:42px;letter-spacing:-.5px}
   background:rgba(255,255,255,.03);
 }
 .to-top:hover{background:rgba(255,255,255,.06)}
+
+/* ✅ 3열 그리드(이미지 카드용) */
+.grid.three{grid-template-columns:1fr}
+@media (min-width: 900px){
+  .grid.three{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ✅ SVG 일러스트 스타일 */
+.hero-illus{margin:18px 0 6px}
+.illus{width:100%;height:auto;display:block}
+.img-card{margin:-2px 0 10px}
